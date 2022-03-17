@@ -2,6 +2,9 @@
  * This module will emulate a coin flip given various conditions as parameters as defined below
  */
 
+//export all functions
+export {coinFlip, coinFlips, countFlips, flipACoin};
+
 /** Simple coin flip
  * 
  * Write a function that accepts no parameters but returns either heads or tails at random.
