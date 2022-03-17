@@ -5,8 +5,6 @@
 //export all functions
 //export {coinFlip, coinFlips, countFlips, flipACoin};
 
-var a = 10;
-export {a};
 /** Simple coin flip
  * 
  * Write a function that accepts no parameters but returns either heads or tails at random.
@@ -83,6 +81,7 @@ function flipACoin(call) {
 
 
 /** Export 
- * 
+ * export {coinFlip, coinFlips, countFlips, flipACoin};
  * Export all of your named functions
 */
+export {coinFlip, coinFlips, countFlips, flipACoin};
