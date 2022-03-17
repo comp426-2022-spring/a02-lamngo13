@@ -3,8 +3,10 @@
  */
 
 //export all functions
-export {coinFlip, coinFlips, countFlips, flipACoin};
+//export {coinFlip, coinFlips, countFlips, flipACoin};
 
+var a = 10;
+export {a};
 /** Simple coin flip
  * 
  * Write a function that accepts no parameters but returns either heads or tails at random.
@@ -18,8 +20,11 @@ export {coinFlip, coinFlips, countFlips, flipACoin};
  */
 
 function coinFlip() {
-
+return "TESTHEADS";
 }
+
+//idk if this right
+export function coinFlip();
 
 /** Multiple coin flips
  * 
