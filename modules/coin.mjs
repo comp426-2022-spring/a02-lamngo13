@@ -18,11 +18,11 @@
  */
 
 function coinFlip() {
-return "TESTHEADS";
+return "heads";
 }
 
-//idk if this right
-export function coinFlip();
+
+
 
 /** Multiple coin flips
  * 
