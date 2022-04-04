@@ -18,7 +18,12 @@
  */
 
 function coinFlip() {
-return "heads";
+let num = Math.floor(Math.random() * 10);
+if (num % 2 == 0) {
+  return "heads";
+} else {
+  return "tails";
+}
 }
 
 
@@ -44,7 +49,11 @@ return "heads";
  */
 
 function coinFlips(flips) {
-
+  let bruh = [];
+  for (let i = 0; i < flips; i++) {
+    bruh[i] = coinFlip();
+  }
+return bruh;
 }
 
 /** Count multiple flips
@@ -61,7 +70,32 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
+  let nHeads = 0;
+  let nTails = 0;
+  if (length(array) == 0) {
+    return "the array is empty.";
+  }
+  //end edge case 
 
+  for (let i = 0; i < array; i++) {
+    if (array[i] == 'heads') {
+      nHeads++;
+    } else {
+      nTails++;
+    }
+  }
+  //end of loop 
+
+  if (nHeads == 0) {
+    return "{ tails: " + nTails.toString() + " }";
+  }
+  else if (numTails == 0){
+    return "{ heads: " + nHeads.toString() + " }";
+  }
+  else {
+    return "{ tails: " + nTails.toString() + ", heads: " + numHeads.toString() + " }";
+  }
+  //return array;
 }
 
 /** Flip a coin!
