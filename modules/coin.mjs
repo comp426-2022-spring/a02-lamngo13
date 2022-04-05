@@ -49,9 +49,12 @@ if (num % 2 == 0) {
  */
 
 function coinFlips(flips) {
+  let theResult = ""
   let bruh = [];
   for (let i = 0; i < flips; i++) {
-    bruh[i] = coinFlip();
+    //bruh[i] = coinFlip();
+    theResult = coinFlip()
+    bruh.push(theResult)
   }
 return bruh;
 }
@@ -72,7 +75,7 @@ return bruh;
 function countFlips(array) {
   let nHeads = 0;
   let nTails = 0;
-  if (length(array) == 0) {
+  if (array.length == 0) {
     return "the array is empty.";
   }
   //end edge case 
