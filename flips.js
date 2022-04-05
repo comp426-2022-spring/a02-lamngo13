@@ -2,11 +2,15 @@ import {coinFlip, coinFlips, countFlips, flipACoin} from "./modules/coin.mjs"
 import min from 'minimist'
 
 let args = min(process.argv.slice(2));
+args['number'];
+let theNum = args.number;
 
-if (args['number']) {
-    console.log(coinFlips(args['number']))
-    console.log(countFlips(coinFlips(args['number'])))
+if (theNum == null) {
+    let flip = coinFlip(1);
+    console.log(flip);
+    console.log(countFlips(flip));
 } else {
-    console.log(coinFlips(1));
-    console.log(countFlips(coinFlip(1)));
+    let flips = coinFlips(theNum);
+    console.log(flips);
+    console.log(countFlips(flips))
 }
