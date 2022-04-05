@@ -2,7 +2,8 @@ import {coinFlip, coinFlips, countFlips, flipACoin} from "./modules/coin.mjs"
 import minimist from 'minimist'
 
 let args = minimist(process.argv.slice(2));
-let theNum = args.number;
+
+let theNum = args['number'];
 //args['number'];
 console.log(theNum);
 //args['theNum'];
