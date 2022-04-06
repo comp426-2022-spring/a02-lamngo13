@@ -1,16 +1,27 @@
 import {coinFlip, coinFlips, countFlips, flipACoin} from "./modules/coin.mjs"
 //import minimist from './node_modules/minimist'
-import minimist from 'minimist'
+//import minimist from 'minimist'
 
-let args = minimist(process.argv.slice(2));
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+//USE CREATE REQUIRE
 
-let theNum = args['number'];
-//args['number'];
+
+const args = require('minimist')(process.argv.slice(2))
+//console.log(args);
+args['number']
+let theNum = args.number
+//end new stuff
+
+//let args = minimist(process.argv.slice(2));
+
+//install node and minimist (and express for future)
+
+//let theNum = args['number'];
+
 console.log(theNum);
 
-const num = args.number;
-console.log(num)
-//THIS DOESNT YET WORK :(
+//THIS DOESNT YET WORK GIVES ME UNDEFINED!
 
 
 //let theNum = args.number;
