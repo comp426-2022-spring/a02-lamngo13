@@ -7,6 +7,9 @@ let args = minimist(process.argv.slice(2));
 let theNum = args['number'];
 //args['number'];
 console.log(theNum);
+
+const num = args.number;
+console.log(num)
 //THIS DOESNT YET WORK :(
 
 
