@@ -40,7 +40,7 @@ if (theNum == null || undefined) {
         console.log("{heads: 1}")
     } else {
         console.log("[tails]")
-        console.log("{tails: 1")
+        console.log("{tails: 1}")
     }
     //theFlips = coinFlip(1);
     //console.log(theFlips);
