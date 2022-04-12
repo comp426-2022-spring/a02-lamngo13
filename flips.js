@@ -36,7 +36,7 @@ if (theNum == null || undefined) {
     console.log(theFlips);
     console.log(countFlips(theFlips));
 } else {
-    console.log(theNum)
+    //console.log(theNum)
     theFlips = coinFlips(theNum);
     console.log(theFlips);
     console.log(countFlips(theFlips))
