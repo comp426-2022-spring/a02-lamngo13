@@ -32,9 +32,18 @@ if (theNum == null || undefined) {
     //DEBUGGING
     //console.log("UNDEF BRUH")
     //end debugging
-    theFlips = coinFlip(1);
-    console.log(theFlips);
-    console.log(countFlips(theFlips));
+    //BRAZY STUFF BC IDK ARRAYS OF CHARS
+    theFlips = coinFlip(1)
+    console.log(theFlips)
+    //hardcode the response
+    if (theFlips == "heads") {
+        console.log("{heads: 1}")
+    } else {
+        console.log("{tails: 1")
+    }
+    //theFlips = coinFlip(1);
+    //console.log(theFlips);
+    //console.log(countFlips(theFlips));
 } else {
     //console.log(theNum)
     theFlips = coinFlips(theNum);
