@@ -124,10 +124,13 @@ function countFlips(array) {
 
 function flipACoin(call) {
   let result = coinFlip();
+  let winner = ""
   if (call == result) {
-    return "{ call: " + call + ", flip: " + flip + ", result: " + result + " }";
+    winner = "win"
+  } else {
+    winner = "lose"
   }
-
+  return "{call: " + call +", flip: " + result + ", result: " + winner +"}"
 }
 //bruh
 

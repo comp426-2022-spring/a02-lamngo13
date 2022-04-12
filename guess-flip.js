@@ -20,10 +20,14 @@ let theCall = args['call']
 
 
 console.log(theCall)
-if (theCall==null ||theCall == undefined || ((theCall!="heads")&&(theCall!="tails"))) {
-    console.log("Error: no input.")
-} else {
-    let theFlip = flipACoin(theCall)
-    console.log(theFlip)
-}
+//if (theCall==null ||theCall == undefined || ((theCall!="heads")&&(theCall!="tails"))) {
+if (theCall == null) {
 
+console.log("Error: no input.")
+
+} else if (theCall != "heads" && theCall != "tails") {
+    console.log("Usage: node guess-flip --call=[heads|tails]")
+    
+} else {
+    console.log(flipACoin(theCall))
+}
