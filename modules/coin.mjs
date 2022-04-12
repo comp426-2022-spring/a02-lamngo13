@@ -78,37 +78,35 @@ function countFlips(array) {
   if (array.length == 0) {
     return "the array is empty.";
   }
+
+  var returnable = {
+    heads: 0,
+    tails: 0
+  }
   //end edge case 
 
-  for (let i = 0; i < array.length; i++) {
-    //DEBUG
-    //console.log(i)
-    //console.log(array[i])
-    //EDN DEBUG
-    if (array[i] == 'heads') {
-      nHeads++;
+  array.forEach(flip => {
+    if (flip == HEADS) {
+      returnable.heads++
     } else {
-      nTails++;
+      returnable.tails++
     }
-  }
-  //end of loop 
-  //TESTING
-  //console.log(array[1])
-  //console.log("heads" + nHeads)
-  //console.log("tails" + nTails)
-  //END TESTING
+  })
+  return returnable
 
-  if (nHeads == 0) {
-    return "{ tails: " + nTails.toString() + " }";
-  }
-  else if (nTails == 0){
-    return "{ heads: " + nHeads.toString() + " }";
-  }
-  else {
-    //return "{ heads: " + nHeads + " tails: " + nTails + " }"
-    return "{heads: " + nHeads + " tails: " + nTails + "}"
-    
-  }
+
+  //if (nHeads == 0) {
+  //  return "{ tails: " + nTails.toString() + " }";
+  //}
+  //else if (nTails == 0){
+  //  return "{ heads: " + nHeads.toString() + " }";
+  //}
+  //else {
+  //  //return "{ heads: " + nHeads + " tails: " + nTails + " }"
+  //  return "{heads: " + nHeads + " tails: " + nTails + "}"
+  //  
+  //}
+
   //return array;
 }
 
