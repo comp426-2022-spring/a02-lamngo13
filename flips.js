@@ -30,7 +30,7 @@ var theFlips = []
 
 if (theNum == null || undefined) {
     //DEBUGGING
-    console.log("UNDEF BRUH")
+    //console.log("UNDEF BRUH")
     //end debugging
     theFlips = coinFlip(1);
     console.log(theFlips);

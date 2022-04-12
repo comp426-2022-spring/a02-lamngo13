@@ -88,6 +88,11 @@ function countFlips(array) {
     }
   }
   //end of loop 
+  //TESTING
+  console.log(array)
+  console.log("heads" + nHeads)
+  console.log("tails" + nTails)
+  //END TESTING
 
   if (nHeads == 0) {
     return "{ tails: " + nTails.toString() + " }";
