@@ -105,8 +105,9 @@ function countFlips(array) {
     return "{ heads: " + nHeads.toString() + " }";
   }
   else {
-    return "{ heads: " + nHeads + " tails: " + nTails + " }"
-    //return "{ tails: " + nTails.toString() + ", heads: " + numHeads.toString() + " }";
+    //return "{ heads: " + nHeads + " tails: " + nTails + " }"
+    return "{heads: " + nHeads + " tails: " + nTails + "}"
+    
   }
   //return array;
 }
