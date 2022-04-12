@@ -34,11 +34,12 @@ if (theNum == null || undefined) {
     //end debugging
     //BRAZY STUFF BC IDK ARRAYS OF CHARS
     theFlips = coinFlip(1)
-    console.log(theFlips)
     //hardcode the response
     if (theFlips == "heads") {
+        console.log("[heads]")
         console.log("{heads: 1}")
     } else {
+        console.log("[tails]")
         console.log("{tails: 1")
     }
     //theFlips = coinFlip(1);
