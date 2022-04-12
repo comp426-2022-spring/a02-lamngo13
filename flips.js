@@ -9,8 +9,8 @@ const require = createRequire(import.meta.url);
 
 const args = require('minimist')(process.argv.slice(2))
 //console.log(args);
-args['number']
-let theNum = args.number
+//MAYBE???args['number']
+let theNum = args['number']
 //end new stuff
 
 //let args = minimist(process.argv.slice(2));
@@ -19,8 +19,8 @@ let theNum = args.number
 
 //let theNum = args['number'];
 
-console.log(theNum);
-
+//console.log(theNum);
+var theFlips = []
 //THIS DOESNT YET WORK GIVES ME UNDEFINED!
 
 
@@ -29,11 +29,15 @@ console.log(theNum);
 //I think this logic is ok if I could get input to work
 
 if (theNum == null || undefined) {
-    let flip = coinFlip(1);
-    console.log(flip);
-    console.log(countFlips(flip));
+    //DEBUGGING
+    console.log("UNDEF BRUH")
+    //end debugging
+    theFlips = coinFlip(1);
+    console.log(theFlips);
+    console.log(countFlips(theFlips));
 } else {
-    let flips = coinFlips(theNum);
-    console.log(flips);
-    console.log(countFlips(flips))
+    console.log(theNum)
+    theFlips = coinFlips(theNum);
+    console.log(theFlips);
+    console.log(countFlips(theFlips))
 }
