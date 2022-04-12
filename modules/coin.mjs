@@ -80,7 +80,11 @@ function countFlips(array) {
   }
   //end edge case 
 
-  for (let i = 0; i < array; i++) {
+  for (let i = 0; i < array.length; i++) {
+    //DEBUG
+    //console.log(i)
+    //console.log(array[i])
+    //EDN DEBUG
     if (array[i] == 'heads') {
       nHeads++;
     } else {
@@ -89,15 +93,15 @@ function countFlips(array) {
   }
   //end of loop 
   //TESTING
-  console.log(array)
-  console.log("heads" + nHeads)
-  console.log("tails" + nTails)
+  //console.log(array[1])
+  //console.log("heads" + nHeads)
+  //console.log("tails" + nTails)
   //END TESTING
 
   if (nHeads == 0) {
     return "{ tails: " + nTails.toString() + " }";
   }
-  else if (numTails == 0){
+  else if (nTails == 0){
     return "{ heads: " + nHeads.toString() + " }";
   }
   else {
