@@ -86,7 +86,7 @@ function countFlips(array) {
   //end edge case 
 
   array.forEach(flip => {
-    if (flip == HEADS) {
+    if (flip == "heads") {
       returnable.heads++
     } else {
       returnable.tails++
